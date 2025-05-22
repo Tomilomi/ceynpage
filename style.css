@@ -284,9 +284,21 @@
       }
 
 
+      .container-equipos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .row-equipos {
+        width: 49.4%;
+        margin-inline: 0.2%;
+      }
 
-
-
+      .cardEquipo {
+        display: flex;
+        height: fit-content;
+        margin: 4%;
+      }
 
       /* Para pantallas pequeñas, aseguramos que la imagen se escale bien */
       @media (max-width: 576px) {

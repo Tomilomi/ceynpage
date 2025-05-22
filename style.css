@@ -319,5 +319,20 @@
               object-position: center -120px;
           }
 
+          .container-equipos {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+          }
+          .row-equipos {
+            width: 100%;
+          }
+
+          .cardEquipo {
+            display: flex;
+            height: fit-content;
+
+          }
+
 
       }

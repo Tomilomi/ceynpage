@@ -24,19 +24,33 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- LANGUAGE DROPDOWN -->
+        <div class="d-none d-lg-block me-3">
+          <div class="btn-group" role="group" aria-label="Idioma">
+            <button id="langButton" type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              ES
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+              <li><button class="dropdown-item lang-option" data-lang="es">Español</button></li>
+              <li><button class="dropdown-item lang-option" data-lang="en">English</button></li>
+            </ul>
+          </div>
+        </div>
+
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#servicios">Servicios</a>
+              <a class="nav-link" href="#servicios" data-i18n="nav.servicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#equipo">Equipo</a>
+              <a class="nav-link" href="#equipo" data-i18n="nav.equipo">Equipo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="#contacto" data-i18n="nav.contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -45,70 +59,67 @@
 
     <section class="hero">
       <div class="container">
-        <h1>NEGOCIOS SIN FRONTERAS</h1>
-        <p>Consultoría en franquicias, empresas y negocios internacionales</p>
+        <h1 data-i18n="hero.title">NEGOCIOS SIN FRONTERAS</h1>
+        <p data-i18n="hero.subtitle">Consultoría en franquicias, empresas y negocios internacionales</p>
       </div>
     </section>
 
     <section id="servicios" class="py-5 fade-up">
       <div class="container">
-        <h2 class="section-title mb-4">Servicios</h2>
+        <h2 class="section-title mb-4" data-i18n="servicios.title">Servicios</h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4 fade-up">
             <div class="card card-border-left h-100 p-3">
-              <h5 class="card-title">Evaluación de oportunidades</h5>
-              <p class="card-text">
+              <h5 class="card-title" data-i18n="servicios.oportunidades.title">Evaluación de oportunidades</h5>
+              <p class="card-text" data-i18n="servicios.oportunidades.text">
                 Asesoría para iniciar o expandir un negocio de franquicia.
               </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 fade-up">
             <div class="card card-border-left h-100 p-3">
-              <h5 class="card-title">Análisis de mercado</h5>
-              <p class="card-text">
-                Identificamos tendencias y oportunidades clave en el sector
-                franquicias.
+              <h5 class="card-title" data-i18n="servicios.mercado.title">Análisis de mercado</h5>
+              <p class="card-text" data-i18n="servicios.mercado.text">
+                Identificamos tendencias y oportunidades clave en el sector franquicias.
               </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 fade-up">
             <div class="card card-border-left h-100 p-3">
-              <h5 class="card-title">Planes de negocio</h5>
-              <p class="card-text">
-                Desarrollamos planes personalizados adaptados a cada
-                emprendimiento.
+              <h5 class="card-title" data-i18n="servicios.planes.title">Planes de negocio</h5>
+              <p class="card-text" data-i18n="servicios.planes.text">
+                Desarrollamos planes personalizados adaptados a cada emprendimiento.
               </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 fade-up">
             <div class="card card-border-left h-100 p-3">
-              <h5 class="card-title">Selección de franquicias</h5>
-              <p class="card-text">
+              <h5 class="card-title" data-i18n="servicios.seleccion.title">Selección de franquicias</h5>
+              <p class="card-text" data-i18n="servicios.seleccion.text">
                 Asesoramos en la búsqueda y evaluación de franquicias ideales.
               </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 fade-up">
             <div class="card card-border-left h-100 p-3">
-              <h5 class="card-title">Asesoría legal</h5>
-              <p class="card-text">
+              <h5 class="card-title" data-i18n="servicios.legal.title">Asesoría legal</h5>
+              <p class="card-text" data-i18n="servicios.legal.text">
                 Redacción y negociación de contratos de franquicia.
               </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 fade-up">
             <div class="card card-border-left h-100 p-3">
-              <h5 class="card-title">Servicios personalizados</h5>
-              <p class="card-text">
-                Ofrecemos acompañamiento integral en el proceso de
-                franquiciamiento.
+              <h5 class="card-title" data-i18n="servicios.personalizados.title">Servicios personalizados</h5>
+              <p class="card-text" data-i18n="servicios.personalizados.text">
+                Ofrecemos acompañamiento integral en el proceso de franquiciamiento.
               </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 fade-up">
             <div class="card card-border-left h-100 p-3">
-              <h5 class="card-title">Formación y marca</h5>
-              <p class="card-text">
+              <h5 class="card-title" data-i18n="servicios.formacion.title">Formación y marca</h5>
+              <p class="card-text" data-i18n="servicios.formacion.text">
                 Capacitación y desarrollo de contenido y estrategias de marca.
               </p>
             </div>
@@ -119,7 +130,7 @@
 
     <section id="equipo" class="py-5 bg-light fade-up">
       <div class="container">
-        <h2 class="section-title mb-4">Nuestro Equipo</h2>
+        <h2 class="section-title mb-4" data-i18n="equipo.title">Nuestro Equipo</h2>
         <div class="container-equipos">
           <div class="row-equipos">
           <div class="cardEquipo">
@@ -131,18 +142,14 @@
                 id="valentina"
               />
               <div class="team-info">
-                <h5>Valentina Iguri</h5>
-                <p>Abogada Magister en Derecho y Negocios Internacionales</p>
-                <p class="team-description">
-                  Valentina lidera el área legal, con amplia experiencia en
-                  contratos internacionales y asesoramiento en franquicias.<br />Su
-                  enfoque es garantizar seguridad jurídica y claridad en todos
-                  los procesos.
+                <h5 data-i18n="team.valentina.name">Valentina Iguri</h5>
+                <p data-i18n="team.valentina.role">Abogada Magister en Derecho y Negocios Internacionales</p>
+                <p class="team-description" data-i18n="team.valentina.desc">
+                  Valentina lidera el área legal, con amplia experiencia en contratos internacionales y asesoramiento en franquicias.<br />Su enfoque es garantizar seguridad jurídica y claridad en todos los procesos.
                 </p>
               </div>
             </div>
           </div>
-          
 
           <div class="cardEquipo">
             <div class="card team-card h-100">
@@ -153,14 +160,10 @@
                 id="tomas"
               />
               <div class="team-info">
-                <h5>Tomas Aparicio</h5>
-                <p>Analista en Sistemas</p>
-                <p class="team-description">
-                  Tomás aporta su experiencia en sistemas de información,
-                  enfocándose en el análisis y la optimización tecnológica de
-                  los procesos empresariales.<br />Su labor es mejorar la
-                  eficiencia operativa mediante soluciones digitales y apoyar la
-                  toma de decisiones con herramientas basadas en datos.
+                <h5 data-i18n="team.tomas.name">Tomas Aparicio</h5>
+                <p data-i18n="team.tomas.role">Analista en Sistemas</p>
+                <p class="team-description" data-i18n="team.tomas.desc">
+                  Tomás aporta su experiencia en sistemas de información, enfocándose en el análisis y la optimización tecnológica de los procesos empresariales.<br />Su labor es mejorar la eficiencia operativa mediante soluciones digitales y apoyar la toma de decisiones con herramientas basadas en datos.
                 </p>
               </div>
             </div>
@@ -177,12 +180,10 @@
                 id="gonzalo"
               />
               <div class="team-info">
-                <h5>Gonzalo Goyeneche</h5>
-                <p>Especialista en Negocios y Marketing</p>
-                <p class="team-description">
-                  Gonzalo se encarga de diseñar estrategias de mercado y
-                  posicionamiento para franquicias, asegurando que cada marca
-                  logre crecer y consolidarse en el mercado global.
+                <h5 data-i18n="team.gonzalo.name">Gonzalo Goyeneche</h5>
+                <p data-i18n="team.gonzalo.role">Especialista en Negocios y Marketing</p>
+                <p class="team-description" data-i18n="team.gonzalo.desc">
+                  Gonzalo se encarga de diseñar estrategias de mercado y posicionamiento para franquicias, asegurando que cada marca logre crecer y consolidarse en el mercado global.
                 </p>
               </div>
             </div>
@@ -197,15 +198,10 @@
                 id="francisco"
               />
               <div class="team-info">
-                <h5>Francisco Ibarra</h5>
-                <p>Gestion de Recursos</p>
-                <p class="team-description">
-                  Francisco se especializa en la gestión empresarial, aportando
-                  una visión integral en cada consultoría desde su formación
-                  avanzada en Administración de Empresas. Su enfoque está en
-                  optimizar recursos, mejorar la organización interna y
-                  acompañar a las empresas en el diseño de estrategias
-                  sostenibles.
+                <h5 data-i18n="team.francisco.name">Francisco Ibarra</h5>
+                <p data-i18n="team.francisco.role">Gestion de Recursos</p>
+                <p class="team-description" data-i18n="team.francisco.desc">
+                  Francisco se especializa en la gestión empresarial, aportando una visión integral en cada consultoría desde su formación avanzada en Administración de Empresas. Su enfoque está en optimizar recursos, mejorar la organización interna y acompañar a las empresas en el diseño de estrategias sostenibles.
                 </p>
               </div>
             </div>
@@ -217,22 +213,20 @@
 
     <section id="contacto" class="py-5 fade-up">
       <div class="container">
-        <h2 class="section-title mb-4">Contacto</h2>
+        <h2 class="section-title mb-4" data-i18n="contacto.title">Contacto</h2>
         <div class="row">
           <div class="col-md-6 fade-up">
-            <h5>Email</h5>
+            <h5 data-i18n="contacto.emailLabel">Email</h5>
             <p>
-              <a href="mailto:consultoraceyn@gmail.com"
-                >consultoraceyn@gmail.com</a
-              >
+              <a href="mailto:consultoraceyn@gmail.com" data-i18n="contacto.email">consultoraceyn@gmail.com</a>
             </p>
-            <h5>Teléfonos</h5>
-            <p>+54 351-2008569<br />+54 388-4788116</p>
-            <h5>Direccion</h5>
-            <p>San José 87 Tilcara Jujuy Argentina- cp.4624</p>
+            <h5 data-i18n="contacto.phoneLabel">Teléfonos</h5>
+            <p data-i18n="contacto.phone">+54 351-2008569<br />+54 388-4788116</p>
+            <h5 data-i18n="contacto.addressLabel">Direccion</h5>
+            <p data-i18n="contacto.address">San José 87 Tilcara Jujuy Argentina- cp.4624</p>
           </div>
           <div class="col-md-6 fade-up">
-            <h5>Envíanos un mensaje</h5>
+            <h5 data-i18n="contacto.formTitle">Envíanos un mensaje</h5>
             <form
               action="mailto:consultoraceyn@gmail.com"
               method="post"
@@ -240,7 +234,7 @@
               target="_blank"
             >
               <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
+                <label for="name" class="form-label" data-i18n="form.nameLabel">Nombre</label>
                 <input
                   type="text"
                   class="form-control"
@@ -250,7 +244,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
+                <label for="email" class="form-label" data-i18n="form.emailLabel">Correo electrónico</label>
                 <input
                   type="email"
                   class="form-control"
@@ -260,7 +254,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
+                <label for="message" class="form-label" data-i18n="form.messageLabel">Mensaje</label>
                 <textarea
                   class="form-control"
                   id="message"
@@ -269,9 +263,7 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Enviar
-              </button>
+              <button type="submit" class="btn btn-primary w-100" data-i18n="form.submit">Enviar</button>
             </form>
           </div>
         </div>
@@ -279,13 +271,10 @@
     </section>
 
     <footer>
-      &copy; 2025 CEYN Consultoría. Todos los derechos reservados.
+      <span data-i18n="footer">&copy; 2025 CEYN Consultoría. Todos los derechos reservados.</span>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./index.js"></script>
-
-
-
   </body>
 </html>
